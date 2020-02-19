@@ -29,7 +29,7 @@ void loop()
          analogBufferIndex = 0;
    }   
    static unsigned long printTimepoint = millis();
-   if(millis()-printTimepoint > 800U)
+   if(millis()-printTimepoint > 1000U)
    {
       printTimepoint = millis();
       for(copyIndex=0;copyIndex<SCOUNT;copyIndex++)
@@ -45,8 +45,8 @@ void loop()
       Serial.print(tdsValue,0);
       Serial.println("ppm");
       s.print("TDS Value:");
-      s.print(tdsValue,0);
-      s.println("ppm");
+      s.println(tdsValue,0);
+     s.println("ppm");
    }
 }
 int getMedianNum(int bArray[], int iFilterLen) 
