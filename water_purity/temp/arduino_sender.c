@@ -10,8 +10,8 @@ Serial.begin(9600);
 void loop() {
 int data=50;
 
- s.write('5');
+ s.write("567.44 PPM\n");
 delay(1000);
-Serial.write('5');
+Serial.write("567.44 PPM\n");
 }
 
